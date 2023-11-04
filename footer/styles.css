@@ -1,0 +1,32 @@
+#footer {
+    color: white;
+    text-align: center;
+    background: var(--primary-color);
+    padding: 20px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.flex-container--footer {
+    justify-content: space-between;
+}
+
+.flex-container--footer p {
+    margin: 0;
+}
+
+#camera {
+    position: absolute;
+    top: -65%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    padding: 20px 25px;
+    color: white;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor: pointer;
+}
