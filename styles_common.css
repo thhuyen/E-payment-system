@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+:root {
+    --primary-color: #0C356A;
+    --secondary-color: #1EA3EB;
+}
+
+
+body {
+    margin: 0;
+    font-family: Jost;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

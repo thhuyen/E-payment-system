@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Face detection on the browser using javascript !</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <video id="video" width="650" height="450" autoplay>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./styles_common.css" />
+    <link rel="stylesheet" href="./header/styles.css" />
+    <link rel="stylesheet" href="./footer/styles.css" />
+    <link rel="stylesheet" href="./styles_index.css" />
+  </head>
+  <body>
+    <header w3-include-html="./header/header.html"></header>
+
+    <section id="wrapper">
+      <h2>Ví của tôi</h2>
+      <article>
+        <img
+          src="./assets/imgs/img-credit-card.png"
+          alt="credit-card"
+          width="100%"
+        />
+      </article>
+
+      <article class="flex-container" id="analytics">
+        <div class="label">
+          <i class="fa-solid fa-chart-line analytics-icon"></i>
+          Thống kê
+        </div>
+
+        <div class="figure">
+          <p>+ 1.056.485</p>
+          <p><b>- 1.8%</b> so với tuần trước</p>
+        </div>
+      </article>
+
+      <article id="account" class="flex-container">
+        <img src="./assets/imgs/img-acc.png" alt="avatar" />
+        &nbsp; &nbsp; Xin chào, Lâm Hạnh
+      </article>
+
+      <article id="service">
+        <div>
+          <i class="fa-solid fa-credit-card"></i>
+          <p>Danh sách thẻ</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <p>Nạp tiền điện thoại</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-money-bill"></i>
+          <p>Thanh toán chi phí gia đình</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-ellipsis"></i>
+          <p>Các dịch vụ khác</p>
+        </div>
+      </article>
+    </section>
+
+    <footer w3-include-html="./footer/footer.html"></footer>
+
+    <script src="loadPage.js"></script>
+  </body>
 </html>

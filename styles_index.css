@@ -1,0 +1,58 @@
+#wrapper {
+    margin: 0 32px 150px 32px;
+}
+
+#analytics {
+    max-width: 100%;
+    justify-content: flex-start;
+    color: white;
+    padding: 5px 20px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    margin: 50px 0;
+}
+
+#analytics .label {
+    padding-right: 30px;
+    border-right: 2px solid white;
+}
+
+.analytics-icon {
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+
+}
+
+#analytics .figure {
+    margin-left: 30px;
+}
+#analytics .figure p {
+    margin: 0;
+}
+#analytics .figure p b{
+    color: red;
+}
+
+#account {
+    margin: 50px 0;
+    justify-content: flex-start;
+}
+
+#service {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+#service i {
+    color: var(--primary-color);
+    width: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--secondary-color);
+}
