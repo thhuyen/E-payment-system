@@ -6,14 +6,14 @@
     max-width: 100%;
     justify-content: flex-start;
     color: white;
-    padding: 5px 20px;
+    padding: 10px 10px;
     background: var(--primary-color);
     border-radius: 10px;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 #analytics .label {
-    padding-right: 30px;
+    padding-right: 10px;
     border-right: 2px solid white;
 }
 
@@ -26,7 +26,7 @@
 }
 
 #analytics .figure {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 #analytics .figure p {
     margin: 0;
@@ -36,7 +36,7 @@
 }
 
 #account {
-    margin: 50px 0;
+    margin: 30px 0;
     justify-content: flex-start;
 }
 

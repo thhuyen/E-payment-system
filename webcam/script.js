@@ -1,8 +1,9 @@
 const video = document.getElementById("video");
 
+// ủa path đúng mà :((()))
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("/models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("/models"),
+  faceapi.nets.tinyFaceDetector.loadFromUri("/webcam/models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("/webcam/models"),
 ]).then(startWebcam);
 
 function startWebcam() {
