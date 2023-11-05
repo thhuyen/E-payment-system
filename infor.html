@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./styles_common.css" />
+    <link rel="stylesheet" href="./header/styles.css" />
+    <link rel="stylesheet" href="./footer/styles.css" />
+    <link rel="stylesheet" href="./styles_index.css" />
+    <link rel="stylesheet" href="./styles_infor.css">
+</head>
+
+<body>
+    <header w3-include-html="./header/header.html"></header>
+
+    <section id="wrapper">
+        <h2>Thông tin</h2>
+        <div id="cover-account">
+            <article id="account" class="flex-container ">
+                <img src="./assets/imgs/img-acc.png" alt="avatar" />
+                <i class="fa-solid fa-circle-check"></i>
+                <span>
+                    <strong>&nbsp; &nbsp; Lâm Hạnh</strong>
+                    <br>
+                    &nbsp; &nbsp; 0123456789
+                    </br>
+                    <span id="authen">
+                     Đã xác thực
+                    </span>
+                </span>
+            </article>
+        </div>
+        
+        <article id="feature">
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <p>Đổi mật khẩu tài khoản</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-shield"></i>
+                <p>Đổi phương thức xác thực</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Trung tâm trợ giúp</p>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-uikit"></i>
+                <p>Giao diện</p>
+            </div>
+        </article>
+
+        <article class="flex-container" id="search">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                &nbsp; &nbsp;Tìm kiếm
+            </div>
+        </article>
+
+        <article  >
+            <div id="other">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p id="other-text">&nbsp; &nbsp;Cài đặt bảo mật 2 lớp</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div id="other">
+                <i class="fa-solid fa-user-plus"></i>
+                <p id="other-text">&nbsp; &nbsp;Đăng ký dịch vụ Facepay</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div id="other">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p id="other-text">&nbsp; &nbsp;Thay đổi hạn mức giao dịch </p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </article>
+    </section>
+
+    <footer w3-include-html="./footer/footer.html"></footer>
+
+    <script src="loadPage.js"></script>
+</body>
+
+</html>
