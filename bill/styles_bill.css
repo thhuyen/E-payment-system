@@ -1,0 +1,54 @@
+#full-section{
+    background-color: rgba(30, 163, 235, 1);
+    width: 100vw;
+    height: 100vh;
+
+}
+#full-bill{
+    background-color: white;
+    width: 80vw;
+    height: 90vh;
+   
+}
+h1 {
+    font-size: 200%;
+}
+#small-section{
+    display: flex;
+}
+.line{
+    width: 100%;
+    color: white;
+   
+}
+#dashed-line{
+    border-bottom: dashed rgba(30, 235, 173, 1) 2.5px;
+    margin-bottom: 40px;
+}
+.circle{
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+    color: var(--secondary-color);
+}
+#small-1{
+    margin-left: -25px;
+}
+ #small-2 {
+     margin-right: -25px;
+ }
+ #blue-text{
+    color: var(--secondary-color);
+ }
+ #line-vertical{
+    border-left: dashed rgba(30, 235, 173, 1) 2.5px;
+    height: 50px;
+    margin-left: 5%;
+    color: white;
+ }
+
+ #solid-line {
+    border-bottom: solid gray 0.1px;
+    width: 80%;
+    
+ }
