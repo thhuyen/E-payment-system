@@ -4,15 +4,23 @@
     height: 100vh;
 
 }
+#bill-icon {
+    padding-top: 10px;
+    width: 80px;
+}
+h2 {
+    margin: 8px;
+} 
+p {
+    margin: 8px;
+}
 #full-bill{
     background-color: white;
     width: 80vw;
     height: 90vh;
    
 }
-h1 {
-    font-size: 200%;
-}
+
 #small-section{
     display: flex;
 }
