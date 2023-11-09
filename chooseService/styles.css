@@ -7,7 +7,9 @@
     flex-direction: column;
     height: 100vh;
     background: linear-gradient(180deg, #1EA3EB 0%, #1EE4EB 100%);
-;
+}
+#timeleft, #title {
+    color: white;
 }
 select, input {
     min-width: 100%;
