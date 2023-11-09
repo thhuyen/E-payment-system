@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles_common.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h3 id="timeleft">Thời gian còn lại <span id="countdown"></span></h3>
+      <h3 id="title">Dịch vụ FacePay</h3>
+      <br />
+      <br />
+
+      <select>
+        <option>Chọn cửa hàng sử dụng dịch vụ</option>
+        <option>Cửa hàng tiện lợi GS25</option>
+        <option>Cửa hàng tiện lợi 7/11</option>
+        <option>Cửa hàng tiện lợi Circle K</option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <input id="money" type="text" placeholder="Nhập số tiền cần thanh toán" />
+      <br />
+      <br />
+      <br />
+
+      <button onclick="handleSubmit()">Đồng ý thanh toán</button>
+    </div>
+
+    <script>
+      const countdown = document.getElementById("countdown");
+      let initialTimer = 120;
+      (function () {
+        if (initialTimer > 0) {
+          setInterval(() => {
+            initialTimer -= 1;
+            countdown.textContent = `${initialTimer}s`;
+          }, 1000);
+        }
+      })();
+
+      function handleSubmit() {
+        const money = document.getElementById("money").value;
+        localStorage.setItem("money", money);
+        window.location.href = "../webcam/camera.html";
+      }
+    </script>
+  </body>
+</html>

@@ -13,19 +13,17 @@
     <article class="flex-container" id="full-section">
       <div id="full-bill">
         <article class="flex-container ">
-          <div>
             <img id="bill-icon" src="../assets/imgs/bill-icon.jpg" alt="credit-card" />
-          </div>
         </article>
         <article class="flex-container ">
-          <div>
-        <h1><strong>Giao Dịch Thành Công</strong></h1>
-        </div>
+          <h2>
+            <strong>Giao Dịch Thành Công</strong>
+          </h2>
         </article>
         <article class="flex-container ">
-          <div>
-        <h2>x,xxx,000 VND</h2>
-        </div>
+    
+          <h2 id="money">dsa</h2>
+    
         </article>
         <div id="small-section">
           <p class="circle" id="small-1">abc</p>
@@ -49,7 +47,6 @@
           <article class="flex-container ">
               <p id="line-vertical"> a</p>
           </article>
-  
         
           <article id="cover-account" class="flex-container ">
             <img src="../assets/imgs/receiver.jpg" alt="avatar"style="width:50px;height:50px;" />
@@ -73,23 +70,22 @@
               <strong>19:32:12, 03/11/2023 </strong>
             </div>  
           </article>
-              <article class="flex-container ">
-                <p class="line" id="solid-line"> a</p>
-              </article>
-            <article class="flex-container ">
-              <div>
-                <p id="blue-text">Mã giao dịch</p>
-                <strong>ww87sqc6cier </strong>
-              </div>
+          <article class="flex-container ">
+            <p class="line" id="solid-line"> a</p>
+          </article>
+          <article class="flex-container ">
+            <div>
+              <p id="blue-text">Mã giao dịch</p>
+              <strong>ww87sqc6cier </strong>
+            </div>
 
-            </article>
+          </article>
       </div>
     </article>
 
-
-          
-
-        </div>
-
+    <script>
+      const money = document.getElementById("money");
+      money.textContent = `${localStorage.getItem("money").toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")} VNĐ`;
+    </script>
   </body>
 </html>
